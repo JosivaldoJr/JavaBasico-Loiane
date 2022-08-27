@@ -1,0 +1,16 @@
+import java.util.*;
+
+public class Q01 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+				
+		do {
+			System.out.println("Digite uma nota entre 0 a 10:");
+			int nota = sc.nextInt();
+
+		}while((nota<0) || (nota>10));
+
+	}
+
+}

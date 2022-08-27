@@ -1,0 +1,19 @@
+import java.util.*;
+
+public class Q16 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		double a = sc.nextDouble();
+		if(a==0) {
+			System.out.println("A equação não é de 2º grau");
+			System.exit(0);
+		}
+		
+		System.out.println("passou");
+		
+	}
+
+}

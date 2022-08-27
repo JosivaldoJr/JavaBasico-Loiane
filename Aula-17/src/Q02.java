@@ -1,0 +1,27 @@
+import java.util.*;
+
+public class Q02 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		boolean val = false;
+		
+		do {
+			System.out.println("Usuário: ");
+			String user = sc.next();
+			System.out.println("Senha: ");
+			String senha = sc.next();
+			
+			if(user.equalsIgnoreCase(senha)) {
+				val = false;
+				System.out.println("Senhas iguais! Digite novamente");
+			} else {
+				System.out.println("Acesso ok!");
+				val = true;
+			}
+		}while (!val);
+
+	}
+
+}

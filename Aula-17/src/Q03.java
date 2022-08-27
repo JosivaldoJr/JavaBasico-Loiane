@@ -1,0 +1,67 @@
+import java.util.*;
+
+public class Q03 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		boolean infoValida = false;
+		
+		do {
+			System.out.println("Nome: (Maior que 3 caracteres)");
+			String nome = sc.next();
+			if(nome.length()>3) {
+				infoValida = true;
+			} else {
+				System.out.println("Digite novamente");
+				infoValida = false;
+			}
+		}while(!infoValida);
+		
+		do {
+			System.out.println("Idade: ");
+			int idade = sc.nextInt();
+			if((idade>=0)&&(idade<=150)) {
+				infoValida = true;
+			} else {
+				System.out.println("Digite novamente");
+				infoValida = false;
+			}
+		}while(!infoValida); 
+		
+		do {
+			System.out.println("Salario: ");
+			double salario = sc.nextDouble();
+			if(salario>0) {
+				infoValida = true;
+			} else {
+				System.out.println("Digite novamente");
+				infoValida = false;
+			}
+		}while(!infoValida);
+		
+		do {
+			System.out.println("Sexo: ");
+			String sexo = sc.next();
+			if(sexo.equalsIgnoreCase("m")||sexo.equalsIgnoreCase("f")) {
+				infoValida = true;
+			} else {
+				System.out.println("Digite novamente");
+				infoValida = false;
+			}
+		}while(!infoValida);
+		
+		do {
+			System.out.println("Estado civil: ");
+			String civil = sc.next();
+			if(civil.equalsIgnoreCase("s")||civil.equalsIgnoreCase("c")||civil.equalsIgnoreCase("v")||civil.equalsIgnoreCase("d")) {
+				infoValida = true;
+			} else {
+				System.out.println("Digite novamente");
+				infoValida = false;
+			}
+		}while(!infoValida);
+
+	}
+
+}

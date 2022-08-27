@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+C:\Users\Júnior\Documents\Junior\Curso_Java - Loiane\.metadata\.plugins\org.eclipse.jdt.core
+3323765870.index
+1681454520.index
+4247888898.index
+2702952279.index
+1326818939.index
