@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class Q04 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		double popA = 80000, taxA = 0.03;
+		double popB = 200000, taxB = 0.015;
+		System.out.println();
+		while(popA < popB) {
+			popA = (popA*taxA)+popA;
+			System.out.println(popA);
+			popB = (popB*taxB)+popB;
+			System.out.println(popB);
+		}
+		
+		
+	}
+
+}
